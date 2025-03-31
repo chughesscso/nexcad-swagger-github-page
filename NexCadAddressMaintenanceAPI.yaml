@@ -18,7 +18,7 @@ servers:
 paths:
   /GetAddresses:
     get:
-      summary: searches addresses
+      summary: Searches addresses
       description: Searches address information based on the provided parameters in the form
       parameters:
       - name: SoKey
