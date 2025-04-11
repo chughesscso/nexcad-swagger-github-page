@@ -4,9 +4,6 @@ info:
   description: Address maintenance api
   contact:
     email: testemail@google.com
-  license:
-    name: Apache 2.0
-    url: https://apiname.org
   version: 1.0.0
 servers:
 - url: https://virtserver.swaggerhub.com/chughes-506/NexCadAddressMaintenanceAPI/1.0.0
