@@ -222,7 +222,7 @@ components:
           format: string
           example: "First, Second, Elm St"
         Location:
-          type: string
+          type: object
           format: string
           example: "2010 First St Lake Marty, Fl 32741"
         BusSubDiv:
