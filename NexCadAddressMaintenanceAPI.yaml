@@ -23,7 +23,7 @@ paths:
       parameters:
       - name: SoKey
         in: query
-        description: pass SoKey to identify the requesting organization
+        description: Pass SoKey to identify the requesting organization
         required: true
         style: form
         explode: true
@@ -31,7 +31,7 @@ paths:
           type: string
       - name: PadNum
         in: query
-        description: pass PadNum to identify the property number
+        description: Pass PadNum to identify the property number
         required: true
         style: form
         explode: true
@@ -39,7 +39,7 @@ paths:
           type: string
       - name: PadDir
         in: query
-        description: pass PadDir to identify the direction of the address
+        description: Pass PadDir to identify the direction of the address
         required: true
         style: form
         explode: true
@@ -47,7 +47,7 @@ paths:
           type: string
       - name: PadName
         in: query
-        description: pass PadName to identigy the property type
+        description: Pass PadName to identify the property type
         required: true
         style: form
         explode: true
@@ -55,7 +55,7 @@ paths:
           type: string
       - name: PadStr
         in: query
-        description: pass PadStr to identigy the street number or name
+        description: Pass PadStr to identify the street number or name
         required: true
         style: form
         explode: true
@@ -63,7 +63,7 @@ paths:
           type: string
       - name: Location
         in: query
-        description: Location request parameter
+        description: Pass Location parameter to identify the Locaioin
         required: false
         style: form
         explode: true
@@ -72,7 +72,7 @@ paths:
           format: object
       - name: BusSubDiv
         in: query
-        description: Business sub-division
+        description: Pass the BusSubDiv parameter to identify the Sub-Division
         required: false
         style: form
         explode: true
@@ -81,7 +81,7 @@ paths:
           format: string
       - name: DistBnd
         in: query
-        description: District Boundary
+        description: Pass the DistBnd parameter to identify the  District Boundary
         required: false
         style: form
         explode: true
@@ -90,7 +90,7 @@ paths:
           format: string
       - name: CsaBnd
         in: query
-        description: CSA Boundary
+        description: Pass the CsaBnd parameter to identify the CSA Boundary
         required: false
         style: form
         explode: true
@@ -99,7 +99,7 @@ paths:
           format: string
       - name: CityDist
         in: query
-        description: City District
+        description: Pass the CityDist parameter to identify the City District
         required: false
         style: form
         explode: true
@@ -108,7 +108,7 @@ paths:
           format: string
       - name: CityCSA
         in: query
-        description: City CSA
+        description: Pass the CityCSA parameter to identify the City CSA
         required: false
         style: form
         explode: true
@@ -117,7 +117,7 @@ paths:
           format: string
       - name: Muni
         in: query
-        description: Municipality
+        description: Pass the Muni parameter to identify the Municipality
         required: false
         style: form
         explode: true
@@ -126,7 +126,7 @@ paths:
           format: string
       - name: CityCode
         in: query
-        description: City Code
+        description: Pass the CityCode parameter to identify the City Code
         required: false
         style: form
         explode: true
@@ -135,7 +135,7 @@ paths:
           format: int32
       - name: City
         in: query
-        description: City name
+        description: Pass the City parameter to identify the City name
         required: false
         style: form
         explode: true
@@ -144,7 +144,7 @@ paths:
           format: string
       - name: AgencyCode
         in: query
-        description: Agency Code
+        description: Pass the AgencyCode parameter to identify the Agency Code
         required: false
         style: form
         explode: true
