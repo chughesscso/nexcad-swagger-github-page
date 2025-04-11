@@ -4,7 +4,6 @@ info:
   description: Address maintenance api
   contact:
     email: testemail@google.com
-    
   version: 1.0.0
 servers:
 - url: https://virtserver.swaggerhub.com/chughes-506/NexCadAddressMaintenanceAPI/1.0.0
@@ -23,7 +22,7 @@ paths:
       parameters:
       - name: SoKey
         in: query
-        description: Pass SoKey to identify the requesting organization
+        description: Pass SoKey parameter to identify the requesting organization
         required: true
         style: form
         explode: true
@@ -31,7 +30,7 @@ paths:
           type: string
       - name: PadNum
         in: query
-        description: Pass PadNum to identify the property number
+        description: Pass PadNum parameter to identify the property number
         required: true
         style: form
         explode: true
@@ -39,7 +38,7 @@ paths:
           type: string
       - name: PadDir
         in: query
-        description: Pass PadDir to identify the direction of the address
+        description: Pass PadDir parameter to identify the direction of the address
         required: true
         style: form
         explode: true
@@ -47,7 +46,7 @@ paths:
           type: string
       - name: PadName
         in: query
-        description: Pass PadName to identify the property type
+        description: Pass PadName parameter to identify the property type
         required: true
         style: form
         explode: true
@@ -55,7 +54,7 @@ paths:
           type: string
       - name: PadStr
         in: query
-        description: Pass PadStr to identify the street number or name
+        description: Pass PadStr parameter to identify the street number or name
         required: true
         style: form
         explode: true
@@ -63,7 +62,7 @@ paths:
           type: string
       - name: Location
         in: query
-        description: Pass Location parameter to identify the Locaioin
+        description: Pass Location parameter to identify the location
         required: false
         style: form
         explode: true
@@ -72,7 +71,7 @@ paths:
           format: object
       - name: BusSubDiv
         in: query
-        description: Pass the BusSubDiv parameter to identify the Sub-Division
+        description: Pass the BusSubDiv parameter to identify the sub-division
         required: false
         style: form
         explode: true
@@ -81,7 +80,7 @@ paths:
           format: string
       - name: DistBnd
         in: query
-        description: Pass the DistBnd parameter to identify the  District Boundary
+        description: Pass the DistBnd parameter to identify the district boundary
         required: false
         style: form
         explode: true
@@ -90,7 +89,7 @@ paths:
           format: string
       - name: CsaBnd
         in: query
-        description: Pass the CsaBnd parameter to identify the CSA Boundary
+        description: Pass the CsaBnd parameter to identify the CSA boundary
         required: false
         style: form
         explode: true
@@ -99,7 +98,7 @@ paths:
           format: string
       - name: CityDist
         in: query
-        description: Pass the CityDist parameter to identify the City District
+        description: Pass the CityDist parameter to identify the city district
         required: false
         style: form
         explode: true
@@ -108,7 +107,7 @@ paths:
           format: string
       - name: CityCSA
         in: query
-        description: Pass the CityCSA parameter to identify the City CSA
+        description: Pass the CityCSA parameter to identify the city CSA
         required: false
         style: form
         explode: true
@@ -117,7 +116,7 @@ paths:
           format: string
       - name: Muni
         in: query
-        description: Pass the Muni parameter to identify the Municipality
+        description: Pass the Muni parameter to identify the municipality
         required: false
         style: form
         explode: true
@@ -126,7 +125,7 @@ paths:
           format: string
       - name: CityCode
         in: query
-        description: Pass the CityCode parameter to identify the City Code
+        description: Pass the CityCode parameter to identify thecCity code
         required: false
         style: form
         explode: true
@@ -135,7 +134,7 @@ paths:
           format: int32
       - name: City
         in: query
-        description: Pass the City parameter to identify the City name
+        description: Pass the City parameter to identify the city name
         required: false
         style: form
         explode: true
@@ -144,7 +143,7 @@ paths:
           format: string
       - name: AgencyCode
         in: query
-        description: Pass the AgencyCode parameter to identify the Agency Code
+        description: Pass the AgencyCode parameter to identify the agency code
         required: false
         style: form
         explode: true
@@ -161,9 +160,9 @@ paths:
                 items:
                   $ref: '#/components/schemas/SOSitusIntersectionSearchInfo'
         "400":
-          description: bad input parameter
+          description: Bad input parameter
         "401":
-          description: unathorized action
+          description: Unauthorized action
         "408":
           description: Server timed out
         "500":
@@ -229,23 +228,23 @@ components:
         BusSubDiv:
           type: string
           format: string
-          example: Business Sub Division
+          example: "Business Sub Division"
         DistBnd:
           type: string
           format: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         CsaBnd:
           type: string
           format: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         CityCSA:
           type: string
           format: string
-          example: Example CityCSA
+          example: "Example CityCSA"
         Muni:
           type: string
           format: string
-          example: Lake Mary
+          example: "Lake Mary"
         CityCode:
           type: integer
           format: int
@@ -253,7 +252,7 @@ components:
         City:
           type: string
           format: string
-          example: Lake Mary
+          example: "Lake Mary"
         AgencyCode:
           type: integer
           format: int32
@@ -269,34 +268,34 @@ components:
           example: "20"
         BusSubDiv:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         Parcel:
           type: string
           example: "123"
         Address:
           type: string
-          example: 123 First St
+          example: "123 First St"
         City:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         CityCode:
           type: string
           example: "50"
         CityCSA:
           type: string
-          example: Example CityCSA
+          example: "Example CityCSA"
         CityDist:
           type: string
-          example: District
+          example: "District"
         CsaBnd:
           type: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         DistBnd:
           type: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         Municipality:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         PadNum:
           type: integer
           format: int
@@ -321,10 +320,10 @@ components:
           example: "123"
         IntStr1:
           type: string
-          example: First St
+          example: "First St"
         IntStr2:
           type: string
-          example: Second Ave
+          example: "Second Ave"
         XCoord:
           type: string
           example: "50"
@@ -339,10 +338,10 @@ components:
           example: true
         NewSOKey:
           type: string
-          example: 12345789true
+          example: "12345789"
         LockedBy:
           type: string
-          example: CH123456
+          example: "CH123456"
         UserCanEdit:
           type: boolean
           example: true
@@ -357,34 +356,34 @@ components:
           example: "20"
         BusSubDiv:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         Parcel:
           type: string
           example: "123"
         Address:
           type: string
-          example: 123 First St
+          example: "123 First St"
         City:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         CityCode:
           type: string
           example: "50"
         CityCSA:
           type: string
-          example: Example CityCSA
+          example: "Example CityCSA"
         CityDist:
           type: string
-          example: District
+          example: "District"
         CsaBnd:
           type: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         DistBnd:
           type: string
-          example: 51 St and Gomor Rd
+          example: "51 St and Gomor Rd"
         Municipality:
           type: string
-          example: Lake Mary
+          example: "Lake Mary"
         PadNum:
           type: integer
           format: int
@@ -409,10 +408,10 @@ components:
           example: "123"
         IntStr1:
           type: string
-          example: First St
+          example: "First St"
         IntStr2:
           type: string
-          example: Second Ave
+          example: "Second Ave"
         XCoord:
           type: string
           example: "50"
@@ -427,10 +426,10 @@ components:
           example: true
         NewSOKey:
           type: string
-          example: 12345789true
+          example: "12345789"
         LockedBy:
           type: string
-          example: CH123456
+          example: "CH123456"
         UserCanEdit:
           type: boolean
           example: true
